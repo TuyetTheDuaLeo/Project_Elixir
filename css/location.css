@@ -1,0 +1,245 @@
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/static/Oswald-ExtraLight.ttf);
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Cabin";
+    src: url(../fonts/static/Cabin-Regular.ttf);
+}
+@font-face {
+    font-family: "Great Vibes";
+    src: url(../fonts/Great_Vibes/GreatVibes-Regular.ttf);
+}
+@font-face {
+    font-family: "Oswald";
+    src: url(../fonts/static/Oswald-Medium.ttf);
+    font-weight: 700;
+}
+@font-face {
+    font-family:"Yellowtail";
+    src: url(../fonts/Yellowtail-Regular.ttf);
+}
+@font-face {
+    font-family: "Bitter";
+    src: url(../fonts/static/Bitter-Medium.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/* start header */
+.nav-header{
+    position: relative;
+    width: 100%;
+    height: 90px;
+    background-color: #fff;
+    padding-top: 20px;
+    display: flex;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.11)
+}
+.container{
+    max-width: 100%;
+}   
+.nav-menu ul{
+    display: flex;
+}
+.nav-header .logo{
+    padding: 10px 0;
+}
+.logo{
+    position: absolute;
+    top: 12px;
+    left: 100px;
+    display: block;
+}
+.logo a img{
+    width: 110px;
+}
+.nav-menu{
+    position: absolute;
+    right: 100px;
+    top: 25px;
+}
+.nav-menu ul li{
+    list-style-type: none;
+    padding: 15px 17px 15px 16px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #818181;
+}
+.nav-menu ul li a:hover{
+    color: #c0a756;
+    transition: 0.3s;
+}
+
+/* Start map */
+.maps{
+    width: 100%;
+}
+.maps .pc-map{
+    text-align: center;
+}
+/* End map */
+
+/* end header */
+.icon-footer{
+    height: 240px;
+    width: 100%;
+    background-color: #141313;
+}
+.icon-footer .ic-social .icon{
+    background: #3D3C38;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 60px;
+    color: #ffffff;
+    border-radius: 50%;
+}
+.icon-footer .ic-social ul li{
+    float: left;
+    margin-top: 15px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0 5px;
+}
+.icon-footer{
+    position: relative;
+}
+.ic-social{
+    position: absolute;
+    top: 78px;
+    left: 39%;
+}
+.icon-footer .ic-social .icon:hover{
+    background-color: #B29859;
+    transition: 0.5s;
+}
+
+
+/* Start open-silebar */
+.open-silebar{
+    display: none;
+}
+/* End open-silebar */
+
+@media screen and (max-width: 1300px) {
+    /* Start map */
+    .pc-map .iframe-map{
+        width: 1000px;
+    }
+    /* End map */
+}
+@media screen and (max-width: 1031px) {
+    /* Start Header */
+    .nav-header .nav-menu li {
+        font-size: 12px;
+        padding: 10px;
+    }
+    /* End header */
+
+    /* Start map */
+    .pc-map .iframe-map{
+        width: 700px;
+    }
+    /* End map */
+}
+@media screen and (max-width: 768px) {
+    /* Start header */
+    .nav-header .nav-menu{
+        top: -426px;
+        width: 90%;
+        height: auto;
+        right: 10px;
+        z-index: 3;
+    }
+    .nav-header .actives{
+        top: 0;
+        width: 90%;
+        height: auto;
+        right: 10px;
+        z-index: 3;
+    }
+    .nav-menu ul{
+        display: block !important;
+        width: 100%;
+        position: absolute;
+        background: rgba(40, 40, 40, 0.9);
+        width: 90%;
+        top: 90px;
+        left: 5%;
+        margin: 0px;
+        height: auto;
+    }
+    .nav-header .nav-menu ul li {
+        border: 1px  solid #333333 ;
+    }
+
+    .open-silebar{
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+    .open-silebar .navbar-toggle{
+        height: 30px;
+        width: 30px;
+        border-radius: 0px;
+        border: 0px;
+        margin: 10px;
+        font-size: 35px;
+        line-height: 30px;
+        padding: 0px;
+        background-color: #fff;
+        border: none;
+    }
+    /* End header */
+
+
+
+    /* Start map */
+    .pc-map .iframe-map{
+        width: 500px;
+    }
+    /* End map */
+
+    /* Start icon footer */
+    .ic-social{
+        left: 32%;
+    }
+    /* End icon footer*/
+}
+@media screen and (max-width: 560px) {
+    /* Start map */
+    .pc-map .iframe-map{
+        width: 400px;
+    }
+    /* End map */
+
+    /* Start icon footer */
+    .ic-social{
+        left: 23%;
+    }
+    /* End icon footer*/
+}
+@media screen and (max-width: 450px ) {
+    /* Start map */
+    .pc-map .iframe-map{
+        width: 300px;
+    }
+    /* End map */
+
+    /* Start icon footer */
+    .ic-social{
+        left: 17%;
+    }
+    /* End icon footer*/
+}

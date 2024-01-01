@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reservation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-header">
+                    <div class="open-silebar">
+                        <button type="button" class="navbar-toggle">
+                            <i class="fa-solid fa-bars icon-navbar"></i>
+                        </button>
+                    </div>  
+                    <!-- Start logo -->
+                   <div class="logo">
+                       <a href="">
+                           <img src="./images/logo_elixir.png" alt="Home Multipage">
+                       </a>
+                   </div>
+                   <!-- End logo -->
+                   <!-- Start menu -->
+                   <div class="nav-menu">
+                       <ul>
+                           <li class="active">
+                               <a href="">Home</a>
+                           </li>
+                           <li>
+                               <a href="">About us</a>
+                           </li>
+                           <li>
+                               <a href="">Menu</a>
+                           </li>
+                           <li>
+                               <a href="">Gallery</a>
+                           </li>
+                           <li>
+                               <a href="">Reservation</a>
+                           </li>
+                           <li>
+                               <a href="">Location</a>
+                           </li>
+                           <li>
+                               <a href="">Blog</a>
+                           </li>
+                       </ul>
+                   </div>
+                   <!-- End menu -->
+              </div>
+            </nav>
+        </div>
+    </header>
+    <body >
+        <div class="reservation-2">
+            <div class="container-2">
+                <div class="contact">
+                    <div class="row">
+                        <div class="wpb_wrapper">
+                            <img src="./images/header_decorator-elegant.png" alt="">
+                            <h2 class="section-title">
+                                RESERVATIONS
+                            </h2>
+                            <img src="./images/header_decorator-elegant.png" alt="">
+                        </div>
+                        <div class="normal">
+                            <div class="contact-subtitle">
+                                Booking a table has never been so easy with free & instant online restaurant reservations, booking now!!
+                            </div>
+                            <div class="reservation-logo">
+                                <img src="./images/reservations_logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="voffset20"></div>
+                        <h4>
+                            <span class="above">Welcome to Elixir</span>
+                        </h4>
+                        <h3>
+                            Make a reservation
+                        </h3>
+                        <h4>
+                            <span>Open Hours</span>
+                        </h4>
+                        <div class="time-on">
+                            <p>
+                                <strong>Sunday to Tuesday</strong>
+                                09.00 - 24:00 
+                                <strong>Friday and Sunday</strong>
+                                08:00 - 03.00
+                            </p>
+                        </div>
+                        <div class="reservation-phone">
+                            +115 255587 54
+                        </div>
+                        <form action="" class="contact-form">
+                            <div class="text-all">
+                                <div class="text-left text-form">
+                                    <p>Book a table</p>
+                                    <input type="date" id="date" name="date" placeholder="Date" class="text-date">
+                                    <input type="time" id="time" name="time" placeholder="Tiem" class="text-time">
+                                    <input type="text" id="party" name="party" placeholder="Party" class="text-party">
+                                </div>
+                                <div class="text-right text-form">
+                                    <p>Contact Details</p>
+                                    <input type="text" id="reservation_name" name="reservation_name" placeholder="Name" class="reservation_name">
+                                    <input type="email" id="reservation_email" name="reservation_email" placeholder="Email" class="reservation_email">
+                                    <input type="text" id="reservation_phone" name="reservation_phone" placeholder="Phone" class="reservation_phone">
+                                </div>
+                            </div>
+                            <div class="text-message">
+                                <textarea name="reservation_message" id="reservation_message" rows="6" placeholder="Message"></textarea>
+                            </div>
+                            <div class="make-reservation">
+                                <div class="formSent">
+                                    <input type="submit" class="button" value="Make reservation">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="voffset60">
+
+                        </div>
+                        <div class="ornament">
+                        
+                        </div>
+                        <div class="voffset60">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="icon-footer">
+            <div class="ic-social">
+                <ul>
+                    <li> <a class="icon" href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li> <a class="icon" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li> <a class="icon" href=""><i class="fa-brands fa-pinterest"></i></a></li>
+                    <li> <a class="icon" href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./slick/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+              if($(this).scrollTop()){
+                $('nav').addClass('sticky');
+              }else{
+                $('nav').removeClass('sticky');
+              }
+            })
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            var navbarToggle = document.querySelector('.navbar-toggle');
+            var navMenu = document.querySelector('.nav-menu');
+          
+            navbarToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('actives');
+            });
+        });
+    </script>
+</body> 
+</html>
